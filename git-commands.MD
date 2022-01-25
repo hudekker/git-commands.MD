@@ -41,16 +41,24 @@ $ git config alias.undo "!f(){ git restore --staged $1 && git restore $1; }; f"
 ### :trophy: restore old versions : **adds to commit log**
 ```console 
 $ git restore --source head~5 .
+$ git add .
+$ git commit -m 'restore version from 5 back'
 ```
 
 ### :shit: reset old versions : **deletes commit log**
 ```console
-// hard reset eliminates working tree and all changes from head to head~5
+// hard reset deletes all changes from head to head~5, but brings with you the working directory changes (staged and unstaged)
 $ git reset --hard head~5 
+
+// to go back if you made a mistake, look at reflog for your starting point then
+$git reset --hard <hash from starting point before your reset>
 
 // soft reset keeps working tree, can dump all of your changes from head to head~5 to a new branch if you wnat to
 $ git reset head~5  
+
 $ git sw -c <branch-dump-changes-to>
+$ git add .
+$ git commit -m 'dump additions after version(-5) stuff here'
 ```
 
 ### pull with unrelated histories
