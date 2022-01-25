@@ -2,14 +2,20 @@
 
 ### github first 
 ```console
+// establish local repo on git
 $ git clone <url>
+
+// push to github
 $ git push origin master
 
 ```
 
 ### git first
 ```console
+// link git to gibhub repo
 $ git remote add origin <ssh>
+
+// update and push to github
 $ git fetch origin
 $ git push -u origin master
 ``` 
