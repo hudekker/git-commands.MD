@@ -31,3 +31,8 @@ $ git restore .
 // or alias "undo"
 $ git config alias.undo "!f(){ git restore --staged $1 && git restore $1; }; f"
 ```
+
+### unrelated histories
+```git
+git pull origin master --allow-unrelated-histories
+```
