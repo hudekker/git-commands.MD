@@ -1,4 +1,4 @@
-# Example Git Commands
+# Example Git Commands - cheatsheet
 
 ### github first (clone repo)
 ```console
