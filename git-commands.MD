@@ -37,6 +37,9 @@ $ git restore --staged .
 $ git restore .
 
 // or alias "undo"
+$ git undo .
+
+// alias for undo
 $ git config alias.undo "!f(){ git restore --staged $1 && git restore $1; }; f"
 ```
 
