@@ -96,7 +96,7 @@ $ git stash list
 $ git apply stash@{n}
 
 // alias for stashing in list, using 'wip' does htis
-$ git config alias.wip2 --global "stash push -m"
+$ git config alias.wip2 --global 'stash push -m'
 ```
 
 ### Create, view, edit aliases
