@@ -22,6 +22,7 @@ $ git push -u origin master
 
 ### remote
 ```console
+// view the remotes
 $ git remote
 $ git remote -v
 
@@ -31,6 +32,7 @@ $ git remote set-url origin <new.git.url/here>
 
 ### undo staged and unstaged
 ```console
+// Undo staged and unstaged 
 $ git restore --staged .
 $ git restore .
 
