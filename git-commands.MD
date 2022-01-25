@@ -1,21 +1,21 @@
 # Example Git Commands
 
 ### github first (clone repo)
-```
+```console
 $ git clone <url>
 $ git push origin master
 
 ```
 
 ### git first
-```
+```console
 $ git remote add origin <ssh>
 $ git fetch origin
 $ git push -u origin master
 ``` 
 
 ### remote
-```git $ 
+```console
 $ git remote
 $ git remote -v
 
@@ -24,12 +24,12 @@ $ git remote set-url origin <new.git.url/here>
 ```
 
 ### restore old versions
-```git 
+```console 
 $ git restore --source head~5 .
 ```
 
 ### undo staged and unstaged
-```git
+```console
 $ git restore --staged .
 $ git restore .
 
@@ -38,7 +38,7 @@ $ git config alias.undo "!f(){ git restore --staged $1 && git restore $1; }; f"
 ```
 
 ### reset old versions (deletes commits)
-```git
+```console
 // hard reset eliminates working tree and all changes from head to head~5
 $ git reset --hard head~5 
 
@@ -48,12 +48,17 @@ $ git sw -c <branch-dump-changes-to>
 ```
 
 ### pull with unrelated histories
-```git
+```console
 $ git pull origin master --allow-unrelated-histories
 ```
 
 ### checkout
-```
+```console
 $ git co head~5
+
+// To save the changes from head to head~5 to a branch
 $ git sw -c <new-branch>
+
+// To abandon this view with no changes
+$ git sw -
 ```
