@@ -47,7 +47,8 @@ $ git commit -m 'restore version from 5 back'
 
 ### :shit: reset old versions : **deletes commit log**
 ```console
-// hard reset deletes all changes from head to head~5, but brings with you the working directory changes (staged and unstaged)
+// hard reset deletes all changes from head to head~5, 
+// but brings with you the working directory changes (staged and unstaged)
 $ git reset --hard head~5 
 
 // to go back if you made a mistake, look at reflog for your starting point then
