@@ -30,6 +30,11 @@ $ git remote -v
 $ git remote set-url origin <new.git.url/here>
 ```
 
+### pull with unrelated histories
+```console
+$ git pull origin master --allow-unrelated-histories
+```
+
 ### undo staged and unstaged
 ```console
 // Undo staged and unstaged 
@@ -67,11 +72,6 @@ $ git reset head~5
 $ git sw -c <branch-dump-changes-to>
 $ git add .
 $ git commit -m 'dump additions after version(-5) stuff here'
-```
-
-### pull with unrelated histories
-```console
-$ git pull origin master --allow-unrelated-histories
 ```
 
 ### checkout
