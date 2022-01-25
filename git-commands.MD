@@ -57,7 +57,8 @@ $ git reset --hard head~5
 $ git reflog
 $ git reset --hard <hash from starting point before your reset>
 
-// soft reset keeps working tree, can dump all of your changes from head to head~5 to a new branch if you wnat to
+// soft reset keeps working tree, adds all changes from head to head~5 to working tree
+// Can dump all of your changes from head to head~5 to a new branch if you wnat to...
 $ git reset head~5  
 
 $ git sw -c <branch-dump-changes-to>
