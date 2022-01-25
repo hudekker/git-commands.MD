@@ -50,7 +50,7 @@ $ git add .
 $ git commit -m 'restore version from 5 back'
 ```
 
-### :shit: reset old versions : **deletes commit log**
+### :shit: reset old versions : **deletes from commit log**
 ```console
 // hard reset deletes all changes from head to head~5, 
 // but brings with you the working directory changes (staged and unstaged)
