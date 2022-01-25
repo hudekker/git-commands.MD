@@ -99,10 +99,13 @@ $ git apply stash@{n}
 $ git config alias.wip2 --global 'stash push -m'
 ```
 
-### Create, view, edit aliases
+### aliases: create, view, edit
 ```console
 // create
 $ git config --global alias.ac '!git add $1 && git commit -m'
+
+// view
+$ git config --get-regexp '^alias\.'
 
 // edit
 $ git config --global -e 
