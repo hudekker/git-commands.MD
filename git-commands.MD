@@ -81,3 +81,17 @@ $ git sw -c <new-branch>
 // To abandon this view with no changes
 $ git sw -
 ```
+### stash
+```console
+// un-named stash save, and use it
+$ git stash 
+$ git pop
+
+// named stash in list
+$ git wip 'my-new-stash'
+$ git stash list
+$ git apply stash@{n}
+
+// alias for stashing in list, using 'wip' does htis
+$ git config alias.wip2 --global "stash push -m"
+```
