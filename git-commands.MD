@@ -23,11 +23,6 @@ $ git remote -v
 $ git remote set-url origin <new.git.url/here>
 ```
 
-### restore old versions
-```console 
-$ git restore --source head~5 .
-```
-
 ### undo staged and unstaged
 ```console
 $ git restore --staged .
@@ -37,7 +32,12 @@ $ git restore .
 $ git config alias.undo "!f(){ git restore --staged $1 && git restore $1; }; f"
 ```
 
-### reset old versions ( :+1:**deletes commits**)
+### restore old versions :trophy:
+```console 
+$ git restore --source head~5 .
+```
+
+### reset old versions :shit:**deletes commits**
 ```console
 // hard reset eliminates working tree and all changes from head to head~5
 $ git reset --hard head~5 
