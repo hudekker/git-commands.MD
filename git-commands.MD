@@ -51,7 +51,8 @@ $ git commit -m 'restore version from 5 back'
 $ git reset --hard head~5 
 
 // to go back if you made a mistake, look at reflog for your starting point then
-$git reset --hard <hash from starting point before your reset>
+$ git reflog
+$ git reset --hard <hash from starting point before your reset>
 
 // soft reset keeps working tree, can dump all of your changes from head to head~5 to a new branch if you wnat to
 $ git reset head~5  
