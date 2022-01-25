@@ -1,6 +1,6 @@
 # Git Cheatsheet
 
-### github first (clone repo)
+### github first 
 ```console
 $ git clone <url>
 $ git push origin master
