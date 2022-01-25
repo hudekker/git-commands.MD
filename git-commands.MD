@@ -37,7 +37,7 @@ $ git restore .
 $ git config alias.undo "!f(){ git restore --staged $1 && git restore $1; }; f"
 ```
 
-### reset old versions (deletes commits)
+### reset old versions ( :+1:**deletes commits**)
 ```console
 // hard reset eliminates working tree and all changes from head to head~5
 $ git reset --hard head~5 
