@@ -38,6 +38,12 @@ $ git remote add tainan <git@tainan:tainanapps/my-repo.git>
 $ git remote add gist-origin <git@gist.github.com:<hash>.git>
 $ git remote add gist-hudekker <git@gist.hudekker:<hash>.git>
 $ git remote add gist-tainan <git@gist.tainan:<hash>.git>
+
+// remove
+$ git remote rm origin2
+
+// rename
+$ git rename origin2 hudekker
 ```
 
 ### pull with unrelated histories
