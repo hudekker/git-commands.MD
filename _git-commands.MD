@@ -1,6 +1,6 @@
 # Git Cheatsheet
 
-### github first
+### github first2
 
 ```console
 // establish local repo on git
