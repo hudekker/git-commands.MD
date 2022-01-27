@@ -32,7 +32,7 @@ $ git remote -v
 // re-assign the origin
 $ git remote set-url origin <ssh>
 
-// add another account
+// add another account (remotes= origin, hudekker, tainan)
 $ git remote add hudekker <git@hudekker:hudekker/my-repo.git>
 $ git remote add tainan <git@tainanapps:tainanapps/my-repo.git>
 ```
