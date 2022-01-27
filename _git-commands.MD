@@ -43,7 +43,7 @@ $ git remote add gist-tainan <git@gist.tainan:<hash>.git>
 $ git remote rm origin2
 
 // rename
-$ git rename origin2 hudekker
+$ git remote rename origin2 hudekker
 ```
 
 ### pull with unrelated histories
