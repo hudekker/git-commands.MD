@@ -35,9 +35,9 @@ $ git remote set-url origin <ssh>
 // add another account (remotes= origin, hudekker, tainan)
 $ git remote add hudekker <git@hudekker:hudekker/my-repo.git>
 $ git remote add tainan <git@tainan:tainanapps/my-repo.git>
-$ git remote add gist-origin <git@gist.github.com:tainanapps/my-repo.git>
-$ git remote add gist-hudekker <git@gist.hudekker:tainanapps/my-repo.git>
-$ git remote add gist-tainan <git@gist.tainan:tainanapps/my-repo.git>
+$ git remote add gist-origin <git@gist.github.com:<hash>.git>
+$ git remote add gist-hudekker <git@gist.hudekker:<hash>.git>
+$ git remote add gist-tainan <git@gist.tainan:<hash>.git>
 ```
 
 ### pull with unrelated histories
