@@ -1,36 +1,4 @@
-# VS-Config
-
-## Recommended Extensions
-
-- Live Server
-- Dracula Official
-- Prettier
-- Material Icon Theme
-- ES7+ React/Redux/React-Native snippets
-- Git Lens
-- Reactjs code snippets
-
-## Settings (ctrl+,)
-
-- User settings, set the default to Prettier
-
-  ![default formatter](./default-formatter.png)
-
-- User settings, set the format to on paste and save to on
-
-  ![format on save](./format-on-save.png)
-
-- In the user JSON settings enter the following
-
-  ![prettier-setttings](./emmet-json.png)
-
-## Configure Gitbash git-prompt.sh file
-
-- Windows: c:/program files/git/etc/profile.d/git-prompt.sh
-
-```shell
 parse_git_branch() {
-    # git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/\\[\1\\]/p'
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
 }
 # COLOR_DEF='%f'
@@ -62,10 +30,10 @@ else
 	# PS1="$PS1"'$MSYSTEM '          # show MSYSTEM
 	# PS1="$PS1"'\[\033[33m\]'       # change to brownish yellow
 
-	PS1="$PS1"'\[\033[32m\]'       # change to cyan
-	# PS1="$PS1"'\e[38;5;10m'       # change to cyan 14
-	# PS1="$PS1"'`parse_git_branch`'' \e[38;5;11m'    # bash function
-	PS1="$PS1"'`parse_git_branch`'' \[\033[33m\]'    # bash function
+	# PS1="$PS1"'\[\033[36m\]'       # change to cyan
+	PS1="$PS1"'\e[38;5;10m'       # change to cyan 14
+	PS1="$PS1"'`parse_git_branch`'' \e[38;5;11m'    # bash function
+	# PS1="$PS1"'`parse_git_branch`'' \[\033[33m\]'    # bash function
 
 	# PS1="$PS1"'`__git_ps1`'' \[\033[33m\]'    # bash function
 	PS1="$PS1"'\W'                 # current working directory
@@ -87,7 +55,7 @@ else
 	PS1="$PS1"'\[\033[0m\]'        # change color
 	# PS1="$PS1"'\n'                 # new line
 	# PS1="$PS1"'$ '                 # prompt: always $
-
+       
 fi
 
 MSYS2_PS1="$PS1"               # for detection by MSYS2 SDK's bash.basrc
@@ -102,4 +70,5 @@ then
 		. "$c"
 	done
 fi
-```
+
+  

@@ -1,4 +1,5 @@
 parse_git_branch() {
+    # git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/\\[\1\\]/p'
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
 }
 # COLOR_DEF='%f'
@@ -30,10 +31,10 @@ else
 	# PS1="$PS1"'$MSYSTEM '          # show MSYSTEM
 	# PS1="$PS1"'\[\033[33m\]'       # change to brownish yellow
 
-	# PS1="$PS1"'\[\033[36m\]'       # change to cyan
-	PS1="$PS1"'\e[38;5;10m'       # change to cyan 14
-	PS1="$PS1"'`parse_git_branch`'' \e[38;5;11m'    # bash function
-	# PS1="$PS1"'`parse_git_branch`'' \[\033[33m\]'    # bash function
+	PS1="$PS1"'\[\033[32m\]'       # change to cyan
+	# PS1="$PS1"'\e[38;5;10m'       # change to cyan 14
+	# PS1="$PS1"'`parse_git_branch`'' \e[38;5;11m'    # bash function
+	PS1="$PS1"'`parse_git_branch`'' \[\033[33m\]'    # bash function
 
 	# PS1="$PS1"'`__git_ps1`'' \[\033[33m\]'    # bash function
 	PS1="$PS1"'\W'                 # current working directory
