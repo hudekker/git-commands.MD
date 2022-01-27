@@ -1,6 +1,6 @@
 # VS-Config
 
-## Recommended Extensions2
+## Recommended Extensions
 
 - Live Server
 - Dracula Official
