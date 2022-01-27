@@ -30,7 +30,11 @@ $ git remote
 $ git remote -v
 
 // re-assign the origin
-$ git remote set-url origin <new.git.url/here>
+$ git remote set-url origin <ssh>
+
+// add another account
+$ git remote add hudekker <git@hudekker:hudekker/my-repo.git>
+$ git remote add tainan <git@tainanapps:tainanapps/my-repo.git>
 ```
 
 ### pull with unrelated histories
