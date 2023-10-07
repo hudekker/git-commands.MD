@@ -1,6 +1,6 @@
 # Git Cheatsheet
 
-### github first
+### creat on github first
 
 ```console
 // establish local repo on git
@@ -11,7 +11,7 @@ $ git push origin master
 
 ```
 
-### git first
+### create on git first
 
 ```console
 // link git to gibhub repo
@@ -134,3 +134,20 @@ $ git config --get-regexp '^alias\.'
 // edit
 $ git config --global -e
 ```
+
+### change default on git from master to main
+
+```console
+$ git branch -m master main
+
+$ git push -u origin main
+```
+
+// on github update default to main
+
+
+```console
+// config git to use main as the default branch
+$ git config --global init.defaultBranch main
+```
+
