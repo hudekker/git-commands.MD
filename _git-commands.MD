@@ -138,6 +138,7 @@ $ git config --global -e
 ### change default on git from master to main
 
 ```console
+// change branch from master to main and push it to github
 $ git branch -m master main
 
 $ git push -u origin main
