@@ -143,8 +143,10 @@ $ git branch -m master main
 $ git push -u origin main
 ```
 
+```console
 // on github update default to main
-
+git push origin --delete master
+```
 
 ```console
 // config git to use main as the default branch
