@@ -145,7 +145,7 @@ $ git push -u origin main
 
 ```console
 // on github update default to main
-git push origin --delete master
+$ git push origin --delete master
 ```
 
 ```console
