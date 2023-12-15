@@ -46,6 +46,30 @@ $ git remote rm origin2
 $ git remote rename origin2 hudekker
 ```
 
+### Restore Lost Code Sequence
+
+```console
+// 1. Identify the Lost Code
+$ git log -- background.js
+
+// 2. Create a New Branch
+$ git switch -c restore-lost-code
+
+// 3. Switch to the Relevant Commit
+$ git restore --source=<commit_hash>
+
+// 4. Copy the Lost Code
+// Open background.js in your editor and manually copy the lost code.
+
+// 5. Switch Back to the Original Branch
+$ git switch <original_branch_name>
+
+// 6. Paste and Commit the Restored Code
+// Open background.js in your editor, paste the copied code, and commit the changes.
+$ git add background.js
+$ git commit -m "Restore lost code in background.js"
+```
+
 ### pull with unrelated histories
 
 ```console
@@ -153,4 +177,3 @@ $ git push origin --delete master
 // config git to use main as the default branch
 $ git config --global init.defaultBranch main
 ```
-
